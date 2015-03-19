@@ -11,7 +11,7 @@ Template Name: About Page
 
 
   <?php endwhile; else: ?>
-    <p>Sorry, no pages matched your criteria.</p>
+    <p>error, not found</p>
 <?php endif; ?>
 
 
