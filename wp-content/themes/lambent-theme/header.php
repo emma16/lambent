@@ -11,3 +11,20 @@
 </head>
 <body>
   <div class="container">
+
+		<div class="headerLogo col-xs-12">
+			<a href="http://localhost:8888/lambent/lambent/wp-content/uploads/2015/03/lambent_home_logo1.png">
+				<img class="alignnone size-medium wp-image-18" src="http://localhost:8888/lambent/lambent/wp-content/uploads/2015/03/lambent_home_logo1-290x300.png" alt="lambent_home_logo" width="232" height="240" />
+			</a>
+		</div>
+
+		<div class="navigationBar col-xs-12">
+
+			<ul class="navigationList">
+				<li>Home</li>
+				<li>About</li>
+				<li>Shine On</li>
+				<li>Editor's Picks</li>
+				<li><input type="text" width="200" class="form-control" placeholder="Search"><button type="submit" class="btn btn-default searchButton">Go</button></li>
+			</ul>
+		</div>
