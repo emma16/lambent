@@ -22,10 +22,10 @@
 		<div class="navigationBar col-xs-12">
 
 			<ul class="navigationList">
-				<li>Home</li>
-				<li>About</li>
-				<li>Shine On</li>
-				<li>Editor's Picks</li>
+				<li><a href="<?php bloginfo('url'); ?>/index">Home</a></li>
+				<li><a href="<?php bloginfo('url'); ?>/about">About</a></li>
+				<li><a href="<?php bloginfo('url'); ?>/shine">Shine On</a></li>
+				<li><a href="<?php bloginfo('url'); ?>/editor">Editor's Picks</a></li>
 				<li><input type="text" width="200" class="form-control" placeholder="Search"><button type="submit" class="btn btn-default searchButton">Go</button></li>
 			</ul>
 		</div>
