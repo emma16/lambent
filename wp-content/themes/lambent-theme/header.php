@@ -16,8 +16,8 @@
   <div class="container-fluid">
 
 		<div class="headerLogo col-xs-12">
-			<a href="wp-content/uploads/2015/03/lambent_home_logo1.png">
-				<img class="alignnone size-medium wp-image-18" src="wp-content/uploads/2015/03/lambent_home_logo1-290x300.png" alt="lambent_home_logo" width="232" height="240" />
+			<a href="/lambent/lambent/wp-content/uploads/2015/03/lambent_home_logo1.png">
+				<img class="alignnone size-medium wp-image-18" src="/lambent/lambent/wp-content/uploads/2015/03/lambent_home_logo1-290x300.png" alt="lambent_home_logo" width="232" height="240" />
 			</a>
 		</div>
 
