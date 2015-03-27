@@ -29,6 +29,28 @@ body{
 	font-weight: bold;
 }
 
+.navigationList li a{
+	font-family: 'Slabo 13px', serif;
+	font-size: 16px;
+	padding-top: 5px;
+	color:white;
+	text-decoration: none;
+	
+}
+
+.navigationList li a:hover{
+	border-top-style: solid;
+	border-top-width: 3px;
+	color: #13EAED;
+}
+
+.navigationList li.active{
+	border-top-style: solid;
+	border-top-width: 3px;
+	color: grey;
+
+}
+
 .form-control {
 	display: inline-block;
 	width: 150px;
@@ -56,17 +78,16 @@ body{
  
 .social>ul li a i {
 	color: white;
-	font-size: 25px;
+	font-size: 30px;
 	text-align: center;
 	margin-right: 10px;
-	margin-top: 10px;
 }
 
 .social>ul li a i:hover {
-	opacity: 0.4;
+	color:#13EAED;
 }
 
-/***************************** footer style (still in progress) **************************************/
+/***************************** footer style **************************************/
 
 .copyright>p {
 	margin-top: 10px;
@@ -91,4 +112,31 @@ body{
 	margin-top: 350px;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+/****************************** about page *********************************************/
+
+#attachment_5{
+	float: right;
+}
+
+.degas{
+	padding: 0;
+	margin:auto;
+	color: white;
+}
+
+.degas-painting{
+	padding:0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.caption{
+	font-family: 'Slabo 13px', serif;
+	font-size: 22px;
+	background-color: white;
+	text-align: left;
+	padding: 20px;
+	width: 500px;
 }
