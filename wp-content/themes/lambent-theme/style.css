@@ -9,7 +9,7 @@ body{
 }
 
 p{
-	font-family: Futura, Impact, Helvetica, Arial, sans-serif;
+	font-family: ‘"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 20px;
 }
 
@@ -167,9 +167,16 @@ h1{
 }
 
 .postContent p{
-	font-size: 12px;
+	font-size: 18px;
 }
 
 .eventDetails {
 	padding-bottom: 10px;
+
 }
+
+.shineOnContainer {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+

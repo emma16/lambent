@@ -13,6 +13,8 @@ if ($shineon->have_posts()) : while ($shineon->have_posts()) : $shineon->the_pos
 $date = DateTime::createFromFormat('Ymd', get_field('date_of_event'));
 
 ?>
+	<div class="shineOnContainer">
+
 	  	<div class="row">
 	  		<div class="col-xs-12">
 	 			<h1><?php the_title(); ?></h1>
@@ -37,10 +39,14 @@ $date = DateTime::createFromFormat('Ymd', get_field('date_of_event'));
 				</div>
 			</div>
 		</div>
+		<!-- this is where the line separating posts will go -->
+	
 	
 	  <?php endwhile; else: ?>
 	    <p>error, not found</p>
 	<?php endif; ?>
+
+	</div>
 
 
 
