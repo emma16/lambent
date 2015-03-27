@@ -169,3 +169,7 @@ h1{
 .postContent p{
 	font-size: 12px;
 }
+
+.eventDetails {
+	padding-bottom: 10px;
+}
