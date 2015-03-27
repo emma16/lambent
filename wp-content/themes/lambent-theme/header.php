@@ -24,10 +24,11 @@
 
 		<div class="navigationBar col-xs-12">
 			<ul class="navigationList">
-				<li><a href="<?php bloginfo('url'); ?>/index">Home</a></li>
-				<li><a href="<?php bloginfo('url'); ?>/about">About</a></li>
-				<li><a href="<?php bloginfo('url'); ?>/shine">Shine On</a></li>
-				<li><a href="<?php bloginfo('url'); ?>/editor">Editor's Picks</a></li>
+				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'index')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/index">Home</a></li>
+				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'about')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/about">About</a></li>
+				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'shine')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/shine">Shine On</a></li>
+				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'editor')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/editor">Editor's Picks</a></li>
 				<li><input type="text" width="200" class="form-control" placeholder="Search"><button type="submit" class="btn btn-default searchButton">Go</button></li>
 			</ul>
 		</div>
+		

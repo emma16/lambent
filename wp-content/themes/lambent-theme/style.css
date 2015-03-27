@@ -52,10 +52,10 @@ h1{
 	color: #13EAED;
 }
 
-.navigationList li.active{
+.navigationList li a.active{
 	border-top-style: solid;
 	border-top-width: 3px;
-	color: grey;
+	color: #13EAED;
 
 }
 
