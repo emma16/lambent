@@ -134,18 +134,25 @@ h1{
 /****************************** about page *********************************************/
 
 #attachment_5{
-	float: right;
+	
+}
+
+.aboutPageTitle {
+	padding-left: 75px;
+}
+
+.aboutPageText {
+	padding-left: 75px;
 }
 
 .degas{
 	padding: 0;
-	margin:auto;
 	color: black;
+
 }
 
 .degas-painting{
 	padding:0;
-	margin-left: -150px;
 }
 
 .caption{
@@ -156,10 +163,6 @@ h1{
 	padding: 20px;
 	width: 500px;
 	color: #4DA4F0;
-}
-
-.about{
-	margin-left: 75px;
 }
 
 
