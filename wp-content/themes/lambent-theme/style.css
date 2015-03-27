@@ -145,7 +145,7 @@ h1{
 
 .degas-painting{
 	padding:0;
-
+	margin-left: -150px;
 }
 
 .caption{
@@ -159,9 +159,9 @@ h1{
 }
 
 .about{
-	margin-left: 50px;
-
+	margin-left: 75px;
 }
+
 
 /*************************** shine on page *******************************************/
 
