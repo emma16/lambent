@@ -39,6 +39,10 @@ $date = DateTime::createFromFormat('Ymd', get_field('date_of_event'));
 				</div>
 			</div>
 		</div>
+
+		<div class="col-xs-12 rule">
+			<img src="/lambent/lambent/wp-content/uploads/2015/03/horizontal-rule.png"/>
+		</div>
 		<!-- this is where the line separating posts will go -->
 	
 	
