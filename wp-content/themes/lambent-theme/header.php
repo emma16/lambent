@@ -17,14 +17,14 @@
   <div class="container-fluid">
 
 		<div class="headerLogo col-xs-12">
-			<a href="<?php bloginfo('url'); ?>">
+			<a href="<?php bloginfo('url'); ?>/index">
 				<img class="alignnone size-medium wp-image-18" src="/lambent/lambent/wp-content/uploads/2015/03/lambent_home_logo1.png" alt="lambent_home_logo" width="232" height="240" />
 			</a>
 		</div>
 
 		<div class="navigationBar col-xs-12">
 			<ul class="navigationList">
-				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'index')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/index">Home</a></li>
+				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'index')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/index ">Home</a></li>
 				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'about')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/about">About</a></li>
 				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'shine')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/shine">Shine On</a></li>
 				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'editor')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/editor">Editor's Picks</a></li>

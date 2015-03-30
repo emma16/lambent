@@ -4,6 +4,16 @@ Template Name: Shine On Page
 */
 ?>
 
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+  	<h1><?php the_title(); ?></h1>
+ 	<h3><?php the_content(); ?></h3>
+
+
+  <?php endwhile; else: ?>
+    <p>Sorry, no pages matched your criteria.</p>
+<?php endif; ?>
+
 <?php 
 $shineon = new WP_Query(['post_type'=>'shine-on']);
 
