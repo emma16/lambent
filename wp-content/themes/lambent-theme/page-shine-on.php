@@ -4,26 +4,50 @@ Template Name: Shine On Page
 */
 ?>
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-  	<h1><?php the_title(); ?></h1>
- 	<h3><?php the_content(); ?></h3>
+<div class="shineOnContainer">
+
+	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+	  	<h1><?php the_title(); ?></h1>
+	 	<h3><?php the_content(); ?></h3>
 
 
-  <?php endwhile; else: ?>
-    <p>Sorry, no pages matched your criteria.</p>
-<?php endif; ?>
+	<?php endwhile; else: ?>
+	    <p>Sorry, no pages matched your criteria.</p>
+	<?php endif; ?>
 
 <?php 
-$shineon = new WP_Query(['post_type'=>'shine-on']);
+	$posts = new WP_Query(['post_type'=>'post']);
 
-if ($shineon->have_posts()) : while ($shineon->have_posts()) : $shineon->the_post(); ?>
+	if($posts->have_posts()): while ($posts->have_posts()) : $posts->the_post(); ?>
 
-<?php
-$date = DateTime::createFromFormat('Ymd', get_field('date_of_event'));
+      <h2>
+      	<a href="<?php the_permalink() ?>">
+      		<?php the_title(); ?>
+      	</a>
+      </h2>
 
-?>
-	<div class="shineOnContainer">
+    <?php the_content(); ?>
+
+
+<?php endwhile; else: ?>
+	    <p>Sorry, no pages matched your criteria.</p>
+	<?php endif; ?>
+
+
+	
+
+
+	<?php 
+	$shineon = new WP_Query(['post_type'=>'shine-on']);
+
+	if ($shineon->have_posts()) : while ($shineon->have_posts()) : $shineon->the_post(); ?>
+
+	<?php
+	$date = DateTime::createFromFormat('Ymd', get_field('date_of_event'));
+
+	?>
 
 	  	<div class="row">
 	  		<div class="col-xs-12">
@@ -51,17 +75,14 @@ $date = DateTime::createFromFormat('Ymd', get_field('date_of_event'));
 		</div>
 
 		<div class="col-xs-12 rule">
-			<img src="/lambent/lambent/wp-content/uploads/2015/03/horizontal-rule.png"/>
+			<img src="/lambent/lambent/wp-content/uploads/2015/03/horizontal-rule.png"/><!-- this is where the horzontal rule goes-->
 		</div>
-		<!-- this is where the line separating posts will go -->
-	
-	
-	  <?php endwhile; else: ?>
+
+	<?php endwhile; else: ?>
 	    <p>error, not found</p>
 	<?php endif; ?>
 
 	</div>
-
-
-
 	<?php get_footer();?>
+
+
