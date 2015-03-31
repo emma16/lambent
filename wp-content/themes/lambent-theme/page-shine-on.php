@@ -30,11 +30,11 @@ Template Name: Shine On Page
 		</div>
 
 		<div class="col-xs-12 rule">
-			<img src="/lambent/lambent/wp-content/uploads/2015/03/horizontal-rule.png"/><!-- this is where the horzontal rule goes-->
+			<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/03/horizontal-rule.png"/><!-- this is where the horzontal rule goes-->
 		</div>
 
 	<?php endwhile; else: ?>
-	    <p>error, not found</p>
+	    <p>Sorry, there are no posts that match your criteria. Please try your search again.</p>
 	<?php endif; ?>
 
 	</div>

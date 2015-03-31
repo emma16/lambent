@@ -11,3 +11,5 @@ Template Name: Share Page
 <?php endwhile; else: ?>
 	    <p>Sorry, no pages matched your criteria.</p>
 	<?php endif; ?>
+
+	<?php get_footer();?>

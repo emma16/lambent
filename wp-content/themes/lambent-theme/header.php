@@ -18,7 +18,7 @@
 
 		<div class="headerLogo col-xs-12">
 			<a href="<?php bloginfo('url'); ?>/index">
-				<img class="alignnone size-medium wp-image-18" src="/lambent/lambent/wp-content/uploads/2015/03/lambent_home_logo1.png" alt="lambent_home_logo" width="232" height="240" />
+				<img class="alignnone size-medium wp-image-18" src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/03/lambent_home_logo1.png" alt="lambent_home_logo" width="232" height="240" />
 			</a>
 		</div>
 
@@ -29,7 +29,7 @@
 				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'share')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/share">Share</a></li>
 				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'shine')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/shine">Shine On</a></li>
 				<li><a <?php if(strpos($_SERVER['REQUEST_URI'], 'editor')) echo 'class="active"'; ?> href="<?php bloginfo('url'); ?>/editor">Editor's Picks</a></li>
-				<li><form action="/lambent/lambent/search" method="get"><input type="text" name="query" width="200" class="form-control" placeholder="Search"><button type="submit" class="btn btn-default searchButton">Go</button></form></li>
+				<li><form style="display: inline-block;" action="<?php bloginfo('url'); ?>/search" method="get"><input type="text" name="query" width="200" class="form-control" placeholder="Search"><button type="submit" class="btn btn-default searchButton">Go</button></form></li>
 			</ul>
 		</div>
 		
