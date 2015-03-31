@@ -25,10 +25,18 @@ to no.
 ----------------------------------------------------------------
 */
 
+.ginput_container{
+	margin-bottom: 15px;
+}
+
 .gform_wrapper {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 16px;
 	overflow: inherit;
-	margin: 10px 0;
-	max-width: 98%
+	margin-left:auto;
+	margin-right: auto;
+	max-width: 60%;
+	padding-top: 300px;
 }
 
 .gform_wrapper h1,
@@ -342,8 +350,13 @@ html>body .entry ul,
 	margin-right: 8px;
 }
 
+#field_2_8 .gfield_label{
+	/*margin-bottom: 15px;*/
+
+}
+
 .gform_wrapper .top_label .gfield_label {
-	margin: 10px 0 4px 0;
+	margin: 10px 0 15px 0;
 	font-weight: bold;
 	display: -moz-inline-stack;
 	display: inline-block;
@@ -435,11 +448,14 @@ html>body .entry ul,
 }
 
 .gform_wrapper h3.gform_title {
+	font-family: ‘American Typewriter’, ‘Courier New’, Courier, Monaco, mono;
+	font-size: 30px;
 	letter-spacing: normal !important;
-	margin: 10px 0 6px 0;
+	margin: 10px 0 20px 0;
 }
 
 .gform_wrapper span.gform_description {
+	font-family: ‘American Typewriter’, ‘Courier New’, Courier, Monaco, mono;
 	font-weight: normal;
 }
 

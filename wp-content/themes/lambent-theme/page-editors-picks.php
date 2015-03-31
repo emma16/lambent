@@ -1,6 +1,6 @@
 <?php get_header();
 /*
-Template Name: Shine On Page
+Template Name: Editor's Picks Page
 */
 ?>
 
@@ -10,7 +10,7 @@ Template Name: Shine On Page
 
 
 	<?php 
-	$shineon = new WP_Query(['post_type'=>'post']);
+	$shineon = new WP_Query(['post_type'=>'post', 'category_name' => 'picks']);
 
 	if ($shineon->have_posts()) : while ($shineon->have_posts()) : $shineon->the_post(); ?>
 
@@ -39,5 +39,3 @@ Template Name: Shine On Page
 
 	</div>
 	<?php get_footer();?>
-
-

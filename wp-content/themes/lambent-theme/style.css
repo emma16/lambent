@@ -9,7 +9,7 @@ body{
 }
 
 p{
-	font-family: ‘"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 16px;
 }
 
@@ -168,6 +168,13 @@ h1{
 
 /*************************** shine on page *******************************************/
 
+.postContent img{
+	float: left;
+	margin-right: 15px;
+
+}
+
+
 .shineOnForm {
 	background-color: grey;
 }
@@ -183,7 +190,7 @@ h1{
 
 .eventDetails {
 	padding-bottom: 10px;
-	color: red;
+	color: blue;
 
 }
 

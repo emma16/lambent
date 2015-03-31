@@ -1,16 +1,20 @@
 <?php get_header();
 /*
-Template Name: Shine On Page
+Template Name: Search Page
 */
 ?>
 
 
 <div class="shineOnContainer">
 
-
-
 	<?php 
-	$shineon = new WP_Query(['post_type'=>'post']);
+
+	if($_GET['query'] != "")
+		$the_query = $_GET['query'];
+	else
+		$the_query=false;
+
+	$shineon = new WP_Query(array('s' => $the_query, 'category_name' => 'shine on'));
 
 	if ($shineon->have_posts()) : while ($shineon->have_posts()) : $shineon->the_post(); ?>
 
@@ -34,10 +38,8 @@ Template Name: Shine On Page
 		</div>
 
 	<?php endwhile; else: ?>
-	    <p>error, not found</p>
+	    <p>Sorry, there are no posts that match your criteria. Please try your search again.</p>
 	<?php endif; ?>
 
 	</div>
 	<?php get_footer();?>
-
-
